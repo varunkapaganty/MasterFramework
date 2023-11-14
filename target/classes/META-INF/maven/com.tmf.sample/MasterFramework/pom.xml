@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tmf.sample</groupId>
+  <artifactId>MasterFramework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Framework for Web, Mobile and API</name>
+  <description>Framework for Web, Mobile and API with latest fetaures like Stream API and Lambda's</description>
+
+<properties>
+	<maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+	<testng.version>7.8.0</testng.version>
+	<selenium.java>4.14.1</selenium.java>
+	<webdrivermanager.version>5.5.3</webdrivermanager.version>
+	<extentreports.version>5.1.1</extentreports.version>
+	<owner.version>1.0.12</owner.version>
+	
+	
+</properties>
+
+<dependencies>
+    		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.java}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>${extentreports.version}</version>
+</dependency>
+
+   <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner-java8</artifactId>
+            <version>${owner.version}</version>
+        </dependency>
+
+	
+	
+</dependencies>
+
+</project>
